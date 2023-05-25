@@ -11,7 +11,12 @@
     <!-- form의 장점과 단점 -->
     <!-- form을 사용하면 쉽게 유효성을 검사할 수 있지만, form은 submit을 인식하는 순간 웹페이지를 새로고침한다. -->
     <form class="login-form">
-      <input type="text" placeholder="What is your name?" />
+      <input
+        required
+        max-length="15"
+        type="text"
+        placeholder="What is your name?"
+      />
       <button>Login</button>
     </form>
     <script src="app.js"></script>
